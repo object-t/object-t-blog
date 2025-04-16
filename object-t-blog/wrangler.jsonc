@@ -1,0 +1,45 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "object-t-blog",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-04-16",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "OGP_CACHE",
+      "id": "51a45a7387944807b0387756166a5e93"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "OGP_BUCKET",
+      "bucket_name": "ogp-cache"
+    }
+  ],
+  // "vars": {
+  //   "MY_VAR": "my-variable"
+  // },
+  // "kv_namespaces": [
+  //   {
+  //     "binding": "MY_KV_NAMESPACE",
+  //     "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  //   }
+  // ],
+
+  // "d1_databases": [
+  //   {
+  //     "binding": "MY_DB",
+  //     "database_name": "my-database",
+  //     "database_id": ""
+  //   }
+  // ],
+  // "ai": {
+  //   "binding": "AI"
+  // },
+  // "observability": {
+  //   "enabled": true,
+  //   "head_sampling_rate": 1
+  // }
+}
