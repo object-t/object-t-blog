@@ -1,8 +1,21 @@
 [
   {
+    "id": "cloudflare-pages-functions.md",
+    "title": "公式サイトの技術について",
+    "thumbnail": "01_website.webp",
+    "type": "tech",
+    "topics": [
+      "React",
+      "Cloudflare"
+    ],
+    "author": "Naoto Kido",
+    "created_at": "2025/04/17",
+    "published": true
+  },
+  {
     "id": "01_website.md",
     "title": "公式Webサイト開設しました！",
-    "thumbnail": "01_thumbnail.webp",
+    "thumbnail": "01_website.webp",
     "type": "info",
     "topics": [
       "お知らせ"

@@ -41,7 +41,7 @@ func main() {
 	re := regexp.MustCompile(`(?m)^(\w+):`)
 
 	for _, entry := range entries {
-		if entry.IsDir() {
+		if entry.IsDir() || !strings.HasSuffix(entry.Name(), ".md") {
 			continue
 		}
 
@@ -54,7 +54,7 @@ func main() {
 
 		content := string(contentBytes)
 		splited := strings.Split(content, "---\n")
-		if strings.HasPrefix(content, "---") && len(splited) <= 2 {
+		if !strings.HasPrefix(content, "---\n") || len(splited) <= 2 {
 			fmt.Printf("Error can't find article details %s\n", articlePath)
 			continue
 		}
