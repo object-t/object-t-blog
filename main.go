@@ -18,6 +18,7 @@ const (
 type ArticleDetails struct {
 	Id          string   `json:"id"`
 	Title       string   `json:"title"`
+	Description string   `json:"description"`
 	Thumbnail   string   `json:"thumbnail"`
 	ArticleType string   `json:"type"`
 	Topics      []string `json:"topics"`
