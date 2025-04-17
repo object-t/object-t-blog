@@ -1,6 +1,6 @@
 ---
 title: "公式サイトの技術について"
-thumbnail: "01_website.webp"
+thumbnail: "01_thambnail.webp"
 type: "tech"
 topics: ["React", "Cloudflare"]
 author: "Naoto Kido"

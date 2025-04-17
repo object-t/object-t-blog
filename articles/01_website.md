@@ -1,6 +1,6 @@
 ---
 title: "公式Webサイト開設しました！"
-thumbnail: "01_website.webp"
+thumbnail: "01_thambnail.webp"
 type: "info"
 topics: ["お知らせ"]
 author: "Naoto Kido"
