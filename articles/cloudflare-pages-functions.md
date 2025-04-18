@@ -3,7 +3,7 @@ title: "公式サイトの技術について"
 description: "学生団体Object<T>の公式Webサイトの細かな技術について解説しています"
 thumbnail: ""
 type: "tech"
-topics: ["React", "Cloudflare"]
+topics: ["React", "Cloudflare", "チーム開発"]
 author: "Naoto Kido"
 created_at: "2025/04/17"
 published: true
