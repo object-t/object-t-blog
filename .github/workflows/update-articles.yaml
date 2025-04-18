@@ -1,0 +1,57 @@
+name: Update articles detaill on Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    name: Update articles detail
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depath: 0
+
+      - name: Get changed markdown files in articles/
+        id: changed_files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: articles/**/*.md
+
+      - name: Set up Node.js
+        if: steps.changed_files.outputs.all_changed_and_modified_files_count > '0'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Update articles.json
+        if: steps.changed_files.outputs.all_changed_and_modified_files_count > '0'
+        run: node scripts/update-articles.js
+
+      - name: Setup Chrome
+        if: steps.changed_files.outputs.all_changed_and_modified_files_count > '0'
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Install dependencies
+        if: steps.changed_files.outputs.all_changed_and_modified_files_count > '0'
+        run: npm ci
+
+      - name: Run thumbnail generation script
+        if: steps.changed_files.outputs.all_changed_and_modified_files_count > '0'
+        env:
+          CHANGED_FILES_LIST: ${{ steps.changed_files.outputs.all_changed_and_modified_files }}
+        run: npm run gen-thumbnail
+
+      - name: Commit and push generated image
+        if: steps.changed_files.outputs.all_changed_and_modified_files_count > '0'
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add articles.json
+          git add thumbnail
+          git diff --staged --quiet || git commit -m "chore: Generate thumbnail [ci skip]"
+          git push

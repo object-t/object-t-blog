@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "gen-thumbnail": "node scripts/gen-thumbnail.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.6.1"
+  }
+}
