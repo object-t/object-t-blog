@@ -21,12 +21,18 @@
       background-color: var(--bg-color);
       color: var(--text-color);
       font-family: 'Noto Sans JP', "Noto Sans CJK JP", sans-serif;
+
+      background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+                    linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+      background-size: 24px 24px;
+      background-repeat: repeat;
+      background-position: center center;
     }
     img {
       position: absolute;
       top: 20px;
       left: 20px;
-      height: 100px;
+      height: 120px;
     }
     .title {
       display: flex;
@@ -52,9 +58,9 @@
     h1 {
       position: relative;
       height: 300px;
-      width: 1000px;
+      width: 900px;
 
-      padding: 0 64px;
+      padding: 0 42px;
 
       display: flex;
       justify-content: center;
@@ -67,7 +73,7 @@
 
       text-box: trim-both cap alphabetic;
       text-align: center;
-      font-size: 64px;
+      font-size: 42px;
     }
 
     .author {
