@@ -43,6 +43,11 @@ jobs:
         if: steps.changed_files.outputs.all_changed_and_modified_files_count > '0'
         run: npm ci
 
+      - name: Install Noto Sans CJK Fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+
       - name: Run thumbnail generation script
         if: steps.changed_files.outputs.all_changed_and_modified_files_count > '0'
         env:
