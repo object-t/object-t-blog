@@ -1,8 +1,20 @@
 [
   {
-    "id": "cloudflare-pages-functions.md",
+    "title": "公式Webサイト開設しました！",
+    "description": "学生団体Object<T>の公式Webサイトを公開しました",
+    "thumbnail": "01_thumbnail.webp",
+    "type": "info",
+    "topics": [
+      "お知らせ"
+    ],
+    "author": "Naoto Kido",
+    "created_at": "2025/04/9",
+    "published": true,
+    "id": "01_website.md"
+  },
+  {
     "title": "公式サイトの技術について",
-    "description": "学生団体Object\u003cT\u003eの公式Webサイトの細かな技術について解説しています",
+    "description": "学生団体Object<T>の公式Webサイトの細かな技術について解説しています",
     "thumbnail": "01_thumbnail.webp",
     "type": "tech",
     "topics": [
@@ -11,19 +23,7 @@
     ],
     "author": "Naoto Kido",
     "created_at": "2025/04/17",
-    "published": true
-  },
-  {
-    "id": "01_website.md",
-    "title": "公式Webサイト開設しました！",
-    "description": "学生団体Object\u003cT\u003eの公式Webサイトを公開しました",
-    "thumbnail": "01_thumbnail.webp",
-    "type": "info",
-    "topics": [
-      "お知らせ"
-    ],
-    "author": "Naoto Kido",
-    "created_at": "2025/04/9",
-    "published": true
+    "published": true,
+    "id": "cloudflare-pages-functions.md"
   }
 ]
