@@ -96,7 +96,6 @@ async function filterArticles() {
 
   console.log(`Check the ${allArticles.length} article.`)
   for (const article of allArticles) {
-    console.log(article);
     if (!article || typeof article.id !== 'string' || !changedBasenames.has(article.id)) continue;
     console.log("Mached article condition.")
     if (article.thumbnail) {

@@ -1,7 +1,7 @@
 ---
 title: "公式サイトの技術について"
 description: "学生団体Object<T>の公式Webサイトの細かな技術について解説しています"
-thumbnail: "01_thumbnail.webp"
+thumbnail: ""
 type: "tech"
 topics: ["React", "Cloudflare"]
 author: "Naoto Kido"
