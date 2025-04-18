@@ -1,5 +1,5 @@
 ---
-title: "公式サイトの技術スタックについて"
+title: "団体公式サイトの技術スタックについて"
 description: "学生団体Object<T>の公式Webサイトの細かな技術について解説しています"
 thumbnail: ""
 type: "tech"
