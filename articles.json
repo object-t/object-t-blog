@@ -39,5 +39,18 @@
     "created_at": "2025/04/25",
     "published": true,
     "id": "2024-review-thirdlf.md"
+  },
+  {
+    "title": "naoido自己紹介",
+    "description": "naoido(Naoto Kido)のプロフィール",
+    "thumbnail": null,
+    "type": "info",
+    "topics": [
+      "自己紹介"
+    ],
+    "author": "Naoto Kido",
+    "created_at": "2025/04/25",
+    "published": true,
+    "id": "naoido-profile.md"
   }
 ]
