@@ -26,5 +26,18 @@
     "created_at": "2025/04/17",
     "published": true,
     "id": "cloudflare-pages-functions.md"
+  },
+  {
+    "title": "2024年の振り返り",
+    "description": "thirdlfの2024年振り返り記事です",
+    "thumbnail": null,
+    "type": "tech",
+    "topics": [
+      "チーム開発"
+    ],
+    "author": "Naoki Miura",
+    "created_at": "2025/04/25",
+    "published": true,
+    "id": "2024-review-thirdlf.md"
   }
 ]
